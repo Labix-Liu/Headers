@@ -1,0 +1,264 @@
+%=========================================
+% Packages
+%=========================================
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage[a4paper, total={6in, 8in}, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage[listings]{tcolorbox}
+\usepackage{hyperref}
+\usepackage{tikz-cd}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{makecell}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage{nicematrix}
+\usetikzlibrary{arrows.meta}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+%=========================================
+% Fonts
+%=========================================
+\usepackage{tgpagella}
+\usepackage[T1]{fontenc}
+
+
+%=========================================
+% Environment
+%=========================================
+
+\usepackage[parfill]{parskip}
+
+%=========================================
+% Custom Math Operators
+%=========================================
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ran}{ran}
+\DeclareMathOperator{\ext}{Ext}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\inn}{Inn}
+\DeclareMathOperator{\syl}{Syl}
+\DeclareMathOperator{\edo}{End}
+\DeclareMathOperator{\cov}{Cov}
+\DeclareMathOperator{\vari}{Var}
+\DeclareMathOperator{\cha}{char}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Obj}{Obj}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\Gr}{Gr}
+
+%=========================================
+% Custom Commands (Shortcuts)
+%=========================================
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\GG}{\mathbb{G}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\1}{\mathbbm{1}}
+\renewcommand{\L}{\mathbb{L}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prj}{\mathbb{P}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\H}{\mathbb{H}}
+\renewcommand{\S}{\mathbb{S}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\I}{\mathbb{I}}
+
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mB}{\mathcal{B}}
+\newcommand{\mC}{\mathcal{C}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mE}{\mathcal{E}}
+\newcommand{\mF}{\mathcal{F}}
+\newcommand{\mG}{\mathcal{G}}
+\newcommand{\mH}{\mathcal{H}}
+\newcommand{\mI}{\mathcal{I}}
+\newcommand{\mJ}{\mathcal{J}}
+\newcommand{\mK}{\mathcal{K}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\mN}{\mathcal{N}}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mP}{\mathcal{P}}
+\newcommand{\mS}{\mathcal{S}}
+\newcommand{\mT}{\mathcal{T}}
+\newcommand{\mU}{\mathcal{U}}
+\newcommand{\mV}{\mathcal{V}}
+\newcommand{\mW}{\mathcal{W}}
+\newcommand{\mX}{\mathcal{X}}
+
+%=========================================
+% Colours!!!
+%=========================================
+\definecolor{LightBlue}{HTML}{2D64A6}
+\definecolor{ForestGreen}{HTML}{4BA150}
+\definecolor{DarkBlue}{HTML}{000080}
+\definecolor{LightPurple}{HTML}{cc99ff}
+\definecolor{LightOrange}{HTML}{ffc34d}
+\definecolor{Buff}{HTML}{DDAE7E}
+\definecolor{Sunset}{HTML}{F2C57C}
+\definecolor{Wenge}{HTML}{584B53}
+\definecolor{Coolgray}{HTML}{9098CB}
+\definecolor{Lavender}{HTML}{D6E3F8}
+\definecolor{Glaucous}{HTML}{828BC4}
+\definecolor{Mauve}{HTML}{C7A8F0}
+\definecolor{Darkred}{HTML}{880808}
+\definecolor{Beaver}{HTML}{9A8873}
+\definecolor{UltraViolet}{HTML}{52489C}
+
+
+\definecolor{Munsell}{HTML}{3891A6}
+\definecolor{OxfordBlue}{HTML}{031D44}
+\definecolor{PrussianBlue}{HTML}{04395E}
+\definecolor{PolynesianBlue}{HTML}{1F487E}
+\definecolor{Cerulean}{HTML}{275168}
+\definecolor{AirSuperiorityBlue}{HTML}{77A3BB}
+
+\definecolor{Royal}{HTML}{9D80BA}
+
+
+
+
+
+
+
+
+
+
+
+%=========================================
+% Theorem Environment
+%=========================================
+\tcbuselibrary{listings, theorems, breakable, skins}
+
+\newtcbtheorem[number within = subsection]{thm}{Theorem}%
+{	colback=Buff!3, 
+	colframe=Buff, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{thm}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{defn}{Definition}%
+{  colback=cyan!1,
+    colframe=cyan!50!black,
+	fonttitle=\bfseries, breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{defn}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{axm}{Axiom}%
+{	colback=red!3, 
+	colframe=Darkred, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{axm}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{prp}{Proposition}%
+{	colback=Royal!3, 
+	colframe=Royal, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{prp}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{lmm}{Lemma}%
+{	colback=Glaucous!3, 
+	colframe=Glaucous, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{lmm}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{crl}{Corollary}%
+{	colback=AirSuperiorityBlue!3, 
+	colframe=AirSuperiorityBlue, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{crl}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{eg}{Example}%
+{	colback=Beaver!5, 
+	colframe=Beaver, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{eg}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{ex}{Exercise}%
+{	colback=Beaver!5, 
+	colframe=Beaver, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{ex}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{alg}{Algorithm}%
+{	colback=UltraViolet!5, 
+	colframe=UltraViolet, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{alg}
+
+\newtcbtheorem[number within=subsection, use counter from=thm]{cjt}{Conjecture}%
+{	colback=ForestGreen!5, 
+	colframe=ForestGreen!80!black, 
+	fonttitle=\bfseries, 
+	breakable, 
+	enhanced jigsaw, 
+	halign=left
+}{alg}
+
+
+%=========================================
+% Hyperlinks
+%=========================================
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=DarkBlue,  %choose some color if you want links to stand out
+}
